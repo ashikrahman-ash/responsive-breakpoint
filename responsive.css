@@ -27,3 +27,24 @@
 @media (min-width: 350px) {
     
 }
+
+
+
+// Elementor Sticky & Blur header ---/ Start
+
+selector.elementor-sticky--effects{ 
+   background-color: rgba(0,0,0,0.4)!important; 
+   backdrop-filter: saturate(180%) blur(20px);
+   -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+selector{ 
+   transition: background-color 1s ease !important;
+}
+selector.elementor-sticky--effects >.elementor-container{
+   min-height: 70px;
+}
+selector > .elementor-container{
+   transition: min-height 1s ease !important;
+}
+
+// Elementor Sticky & Blur header ---/ End
